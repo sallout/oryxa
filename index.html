@@ -1,0 +1,112 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oryxa Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-left">
+      <div><strong>🤖 Oryxa Docs</strong></div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Products</a>
+        <a href="#">Use cases</a>
+        <a href="#">Pricing</a>
+        <a href="#">Docs</a>
+        <a href="#">Support</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="intro">
+    <div class="hero-wrapper">
+      <div class="hero-text">
+        <div class="blog-label">The Oryxa Blog</div>
+        <h1>
+          Introducing Oryxa<br />
+          The AI Bridge to Your App’s Brain.
+        </h1>
+        <div class="author-info">
+          <img src="author.png" alt="Author" />
+          <div>
+            <div class="author-name">Sami Sallout</div>
+            <div class="author-title">Software Engineer<br /><span>Oryxa</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-logo">
+        <div class="logo-glow"></div>
+        <img src="logo.png" alt="Oryxa Logo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Sidebar + Main Documentation -->
+  <div class="container">
+    <div class="sidebar">
+      <h2>Documentation</h2>
+      <div class="accordion">
+        <div class="accordion-header" onclick="toggleAccordion(this)">
+          Get started with Oryxa
+        </div>
+        <ul class="accordion-content">
+          <li><a href="#connect">Connect your app to Oryxa</a></li>
+          <li><a href="#detect">Detect supported features</a></li>
+          <li><a href="#dependency">Add the dependency</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main>
+      <section id="connect">
+        <h2>Connect your app to Oryxa</h2>
+        <p>
+          Initialize <code>OryxaAIHost</code> using your ViewModel and application context. This object bridges your annotated logic with the AI interface.
+        </p>
+        <pre><code>// Inside your Activity or Fragment
+val host = OryxaAIHost(
+    viewModel = viewModel,
+    context = requireContext()
+)</code></pre>
+        <img src="https://i.imgur.com/FzKPNPd.png" alt="Oryxa architecture diagram" />
+      </section>
+
+      <section id="detect">
+        <h2>Detect supported features</h2>
+        <p>
+          The generated metadata from <code>@ExposeToAI</code> allows you to query accessible functions. Useful for debugging or dynamic chat suggestions.
+        </p>
+        <pre><code>
+val features = host.getAvailableFunctions()
+features.forEach {
+    println("AI Callable: \${it.name}")
+}</code></pre>
+      </section>
+
+      <section id="dependency">
+        <h2>Add the dependency</h2>
+        <p>Add Oryxa to your <code>build.gradle.kts</code> file:</p>
+        <pre><code>
+dependencies {
+    implementation("ai.oryxa:oryxa-core:1.0.0")
+    ksp("ai.oryxa:oryxa-processor:1.0.0")
+}</code></pre>
+        <p>Enable the KSP plugin:</p>
+        <pre><code>
+plugins {
+    id("com.google.devtools.ksp") version "1.9.0-1.0.13"
+}</code></pre>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
