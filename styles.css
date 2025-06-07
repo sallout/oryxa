@@ -140,8 +140,8 @@ header {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background: radial-gradient(circle, rgba(255, 204, 51, 0.25), transparent 70%);
   transform: translate(-50%, -50%);
   border-radius: 50%;
