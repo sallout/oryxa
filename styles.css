@@ -138,10 +138,10 @@ header {
 
 .logo-glow {
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   background: radial-gradient(circle, rgba(255, 204, 51, 0.25), transparent 70%);
   transform: translate(-50%, -50%);
   border-radius: 50%;
