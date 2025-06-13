@@ -83,11 +83,11 @@ header {
   z-index: 1;
 }
 .yellow-dash {
-  width: 50%%;
-  height: 2px;
-  margin: 40px;
+  width: 80%;
+  height: 0.5px;
+  margin: 50px;
   align-self: center;
-  background: linear-gradient(to right, #ffcc33, #ffcc33);
+  background: linear-gradient(to right, #332701, #ffcc33 , #332701);
   border-radius: 100px;
 }
 
@@ -311,9 +311,6 @@ main {
   padding: 0;
 }
 
-section {
-  margin-bottom: 80px;
-}
 
 section h2 {
   font-size: 1.8rem;
