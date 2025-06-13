@@ -140,7 +140,7 @@ header {
   transform: scale(1.05);
 }
 .hero-section {
-  min-height: 100vh;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
