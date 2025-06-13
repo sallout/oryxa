@@ -77,7 +77,7 @@ header {
 
 #intro {
   width: 90%;
-  padding: 120px 40px 80px;
+  padding: 120px 40px 0px;
   box-sizing: border-box;
   position: relative;
   z-index: 1;
@@ -85,6 +85,7 @@ header {
 .yellow-dash {
   width: 180px;
   height: 4px;
+  margin: 20px;
   align-self: center;
   background: linear-gradient(to right, #ffcc33, #ffcc33);
   border-radius: 100px;
@@ -230,14 +231,13 @@ header {
 }
 
 .container {
+  align-self: center;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   gap: 60px;
   max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 40px;
+  width: 90%;
   box-sizing: border-box;
 }
 
