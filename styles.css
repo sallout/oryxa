@@ -218,7 +218,7 @@ header {
   border-radius: 50%;
   box-shadow: 0 0 120px rgba(255, 204, 51, 0.2);
   z-index: 1;
-  animation: pulse 4s infinite ease-in-out;
+  animation: pulse 2s infinite ease-in-out;
 }
 
 @keyframes pulse {
