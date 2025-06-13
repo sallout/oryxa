@@ -100,10 +100,10 @@ header {
   letter-spacing: 0.04em;
 }
 
-.hero-text {
-  flex: 1;
-  min-width: 300px;
-}
+ .hero-text {
+    margin: 0 auto;
+    max-width: 90%;
+  }
 
 .hero-text h1 {
   font-size: 3.4rem;
@@ -321,12 +321,14 @@ img:hover {
   .hero-wrapper {
     flex-direction: column;
     text-align: center;
+    gap: 40px;
   }
   .hero-text h1 {
     font-size: 2.2rem;
   }
-  .hero-logo {
-    margin-top: 40px;
+ .hero-logo {
+    margin-top: 0;
+    justify-content: center;
   }
   .container {
     flex-direction: column;
