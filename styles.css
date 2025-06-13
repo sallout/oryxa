@@ -28,6 +28,21 @@ header {
   align-items: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
+.get-start-btn {
+  background-color: #ffcc33;
+  color: #0e0e10;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 14px;
+  display: inline-block;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.get-start-btn:hover {
+  background-color: #f5c000;
+  transform: translateY(-2px);
+}
 
 .header-left {
   display: flex;
