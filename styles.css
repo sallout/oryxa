@@ -45,8 +45,9 @@ header {
 }
 
 .get-start-btn:hover {
+ background-color: #ffcc33; 
+  color: #0e0e10;           
   border-color: #ffcc33;
-  color: #0E0E10;
 }
 
 
