@@ -28,21 +28,26 @@ header {
   align-items: center;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 }
+
 .get-start-btn {
-  background-color: #ffcc33;
-  color: #0e0e10;
-  font-weight: 600;
-  padding: 12px 24px;
-  border-radius: 14px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+  color: white;
+  border: 1px solid #555;
+  padding: 10px 20px;
+  border-radius: 12px;
+  background: transparent;
+  transition: all 0.3s ease;
   display: inline-block;
   text-decoration: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .get-start-btn:hover {
-  background-color: #f5c000;
-  transform: translateY(-2px);
+  border-color: #ffcc33;
+  color: #ffcc33;
 }
+
 
 .header-left {
   display: flex;
