@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,7 +13,7 @@
   <!-- Header -->
   <header>
     <div class="header-left">
-      <div><strong>Oryxa Docs</strong></div>
+      <div class="text-xl font-bold text-white">Oryxa Docs</div>
       <nav class="nav-links">
         <a href="#">Home</a>
         <a href="#">Products</a>
@@ -33,9 +32,12 @@
         <div class="blog-label">The Oryxa Blog</div>
         <h1>
           Introducing Oryxa<br />
-          The AI Bridge to Your App’s Brain.
+          <span class="text-yellow-400">The AI Bridge to Your App’s Brain.</span>
         </h1>
-        <div class="author-info">
+        <p style="color:#ccc; max-width: 600px; font-size: 1rem; line-height: 1.6;">
+          Oryxa connects your Android app to a powerful AI assistant layer, with zero boilerplate, auto-generated dispatchers, and secure runtime confirmation.
+        </p>
+        <div class="author-info mt-5">
           <img src="https://media.licdn.com/dms/image/v2/D4D03AQH7NHFpG6uGkg/profile-displayphoto-shrink_800_800/B4DZdMdQ3FHAAc-/0/1749334434504?e=1754524800&v=beta&t=f1jUc4LjNgQpwgsdQLS5dxtYCu9cvcRE8v3h68FNxqo" alt="Author" />
           <div>
             <div class="author-name">Mohammed Sallout</div>
@@ -88,7 +90,7 @@ val host = OryxaAIHost(
         <pre><code>
 val features = host.getAvailableFunctions()
 features.forEach {
-    println("AI Callable: \${it.name}")
+    println("AI Callable: ${it.name}")
 }</code></pre>
       </section>
 
