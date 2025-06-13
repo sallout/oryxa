@@ -138,6 +138,27 @@ header {
 .author-info img:hover {
   transform: scale(1.05);
 }
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 140px 40px 80px;
+  background: #0e0e10;
+}
+
+.hero-text .highlight {
+  color: #ffcc33;
+}
+
+.hero-description {
+  color: #ccc;
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
 
 .author-name {
   font-weight: 600;
