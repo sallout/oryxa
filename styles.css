@@ -84,13 +84,14 @@ header {
 }
 
 .hero-wrapper {
-  max-width: 1200px;
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   gap: 60px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; 
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .blog-label {
@@ -100,10 +101,10 @@ header {
   letter-spacing: 0.04em;
 }
 
- .hero-text {
-    margin: 0 auto;
-    max-width: 90%;
-  }
+.hero-text {
+  flex: 1;
+  min-width: 0; 
+}
 
 .hero-text h1 {
   font-size: 3.4rem;
@@ -177,13 +178,13 @@ header {
 }
 
 .hero-logo {
-  position: relative;
   width: 200px;
   height: 200px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .hero-logo img {
@@ -339,7 +340,7 @@ img:hover {
 }
 
 @media screen and (max-width: 650px) {
-  .hero-wrapper {
+.hero-wrapper {
     flex-direction: column;
     text-align: center;
     gap: 40px;
@@ -348,8 +349,7 @@ img:hover {
     font-size: 2.2rem;
   }
  .hero-logo {
-    margin-top: 0;
-    justify-content: center;
+    margin: 0 auto;
   }
   .container {
     flex-direction: column;
