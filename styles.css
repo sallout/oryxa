@@ -86,11 +86,11 @@ header {
 .hero-wrapper {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: 60px;
   flex-wrap: nowrap; 
   max-width: 1200px;
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 
