@@ -317,7 +317,7 @@ img:hover {
   transform: scale(1.01);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 650px) {
   .hero-wrapper {
     flex-direction: column;
     text-align: center;
