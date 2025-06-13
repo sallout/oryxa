@@ -88,12 +88,12 @@
       </section>
       <section id="arch_comp">
           <h2>Architecture &amp; Components</h2>
-        <p>Oryxa is designed to fit right into modern app architectures. To keep integration simple and scalable, Oryxa relies on <a href="https://dagger.dev/hilt/" target="_blank" rel="noopener" style="color: #FFCC33;">Hilt</a> for dependency injection. This ensures that your app’s data, actions, and AI-powered features are all wired together cleanly and automatically.</p>
+        <p>Oryxa is designed to fit right into modern app architectures. To keep integration simple and scalable, and relies on <a href="https://dagger.dev/hilt/" target="_blank" rel="noopener" style="color: #FFCC33;">Hilt</a> for dependency injection. This ensures that your app’s data, actions, and AI-powered features are all wired together cleanly and automatically.</p>
         <h3>What you need to get started:</h3>
         <ul>
           <li>Your app <strong>must</strong> use Hilt as its dependency injection framework.</li>
-          <li>You’ll define your app’s actions as simple functions, using basic parameters (like text, numbers, or categories).</li>
-          <li>For dynamic lists and options, just provide a simple “lookup provider” to tell Oryxa about your available values(e.g., task types, categories, etc).</li>
+          <li>You’ll define your app’s actions as simple functions, using primitive parameters (text, numbers, booleans...).</li>
+          <li>For dynamic lists and lookups, just provide a simple “lookup provider” to tell Oryxa about your available values(e.g., task types, categories, etc).</li>
         </ul>
         <p>
           With these in place, Oryxa auto-generates all the boilerplate for connecting user requests to your app’s logic, so you can focus on building great features.
